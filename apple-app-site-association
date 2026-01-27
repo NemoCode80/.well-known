@@ -31,10 +31,6 @@
                {
                   "?": { "f": "addDevice", "n": "@", "m": "*", "serviceID": "FFF0" },
                   "comment": "Matches any URL that has query items with name 'f', 'n', 'm' and 'serviceID' and values of exactly 'addDevice', '@', any characters and 'FFF0' respectively."
-               },
-               {
-                  "/": "*",
-                  "comment": "Matches all paths"
                }
              ]
            }
