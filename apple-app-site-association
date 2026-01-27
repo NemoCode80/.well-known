@@ -1,0 +1,45 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "GVD5M7YCUP.com.NemoCode.LinksDemo", "GVD5M7YCUP.com.Coplus.AicoCare" ],
+             "components": [
+               {
+                  "#": "no_universal_links",
+                  "exclude": true,
+                  "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+               },
+               {
+                  "/": "/buy/*",
+                  "comment": "Matches any URL with a path that starts with /buy/."
+               },
+               {
+                  "/": "/help/website/*",
+                  "exclude": true,
+                  "comment": "Matches any URL with a path that starts with /help/website/ and instructs the system not to open it as a universal link."
+               },
+               {
+                  "/": "/help/*",
+                  "?": { "articleNumber": "????" },
+                  "comment": "Matches any URL with a path that starts with /help/ and that has a query item with name 'articleNumber' and a value of exactly four characters."
+               },
+               {
+                  "/": "/addDevice/*",
+                  "?": { "n": "@", "m": "*", "serviceID": "FFF0" },
+                  "comment": "Matches any URL with a path that starts with /addDevice/ and that has query items with name 'n', 'm' and 'serviceID' and values of exactly '@', any characters and 'FFF0' respectively."
+               },
+               {
+                  "?": { "f": "addDevice", "n": "@", "m": "*", "serviceID": "FFF0" },
+                  "comment": "Matches any URL that has query items with name 'f', 'n', 'm' and 'serviceID' and values of exactly 'addDevice', '@', any characters and 'FFF0' respectively."
+               },
+               {
+                  "/": "*",
+                  "comment": "Matches all paths"
+               }
+             ]
+           }
+       ]
+  }
+}
+
+
