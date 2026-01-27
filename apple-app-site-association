@@ -29,7 +29,7 @@
                   "comment": "Matches any URL with a path that starts with /addDevice/ and that has query items with name 'n', 'm' and 'serviceID' and values of exactly '@', any characters and 'FFF0' respectively."
                },
                {
-                  "?": { "f": "addDevice", "n": "@", "m": "*", "serviceID": "FFF0" },
+                  "?": { "f": "addDevice", "n": "*", "serviceID": "FFF0" },
                   "comment": "Matches any URL that has query items with name 'f', 'n', 'm' and 'serviceID' and values of exactly 'addDevice', '@', any characters and 'FFF0' respectively."
                }
              ]
