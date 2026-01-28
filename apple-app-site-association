@@ -2,7 +2,7 @@
   "applinks": {
       "details": [
            {
-            
+            "appIDs": [ "55GVD5M7YCUP.com.NemoCode.LinksDemo" ],
              "components": [
                {
                   "#": "no_universal_links",
@@ -26,7 +26,7 @@
              ]
            },
            {
-             "appID": "55GVD5M7YCUP.com.Coplus.AicoCare" ,
+             "appIDs": [ "55GVD5M7YCUP.com.Coplus.AicoCare" ],
              "components": [
                {
                   "#": "no_universal_links",
