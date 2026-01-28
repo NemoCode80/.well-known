@@ -2,7 +2,7 @@
   "applinks": {
       "details": [
            {
-             "appIDs": [ "GVD5M7YCUP.com.Coplus.AicoCare", "GVD5M7YCUP.com.NemoCode.LinksDemo" ],
+             "appID": "GVD5M7YCUP.com.NemoCode.LinksDemo" ,
              "components": [
                {
                   "#": "no_universal_links",
@@ -38,9 +38,26 @@
                   "comment": "Matches any URL that has query items with name 'f', 'n', 'm' and 'serviceID' and values of exactly 'addDevice', '@', any characters and 'FFF0' respectively."
                }
              ]
+           },
+           {
+             "appIDs": [ "GVD5M7YCUP.com.Coplus.AicoCare" ],
+             "components": [
+               {
+                  "#": "no_universal_links",
+                  "exclude": true,
+                  "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+               },     
+               {
+                  "/": "/do/*",
+                  "?": { "f": "addDevice", "n": "*", "m": "*", "serviceID": "FFF0" },
+                  "comment": "Matches any URL with a path that starts with /do/ and that has query items with name 'n', 'm' and 'serviceID' and values of exactly any, any characters and 'FFF0' respectively."
+               },
+               {
+                  "?": { "f": "addDevice", "n": "*", "serviceID": "FFF0" },
+                  "comment": "Matches any URL that has query items with name 'f', 'n', 'm' and 'serviceID' and values of exactly 'addDevice', '@', any characters and 'FFF0' respectively."
+               }
+             ]
            }
        ]
   }
 }
-
-
